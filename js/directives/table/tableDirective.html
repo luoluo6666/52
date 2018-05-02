@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+    <div class="panel-heading ">
+        <strong ng-if="pageInit.tableTitle" >{{pageInit.tableTitle}}</strong>
+        <div  ng-if="pageInit.isAdd" class="btn-group pull-right mgn-left-30px mgn-top-4">
+            <button class="btn btn-primary btn-xs "  ui-sref="{{add}}">
+                <i class="fa fa-plus-square fa-fw"></i> {{pageInit.isAdd}}
+            </button>
+        </div>
+        <div ng-if="pageInit.isSort"  class="btn-group pull-right mgn-top-4">
+            <button class="btn btn-primary btn-xs" ng-disabled="(vm.lockSort==undefined|| vm.lockSort=='') || vm.statusLock !=1"  ng-click="vm.saveSorting()">
+                {{pageInit.isSort}}
+            </button>
+        </div>
+    </div>
+    <div id="table" class="panel-body">
+        <div ng-if="data == ''" style="text-align: center" >暂无数据</div>
+    </div>
+
+</div>

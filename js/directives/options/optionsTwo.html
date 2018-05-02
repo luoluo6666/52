@@ -1,0 +1,19 @@
+<div>
+    <label class="{{labelClass}}"><i style="color: red" ng-if="essential">*</i>{{selectName}}</label>
+    <div class="{{optionClass}}" style="position: relative" >
+        <select name="name" class="form-control" ng-model="selectedValue" ng-disabled="dis">
+            <option ng-if="get" value="{{item.id}}" ng-repeat=" item in options track by $id(item)"
+                    ng-selected="item.id ==selectedValue">
+                {{item.name}}
+            </option>
+            <option ng-if="!(get || obj)" value="{{item.type}}" ng-repeat=" item in options"
+                    ng-selected="item.type == selectedValue">
+                {{item.name}}
+            </option>
+            <option ng-if="obj" value="{{key}}" ng-repeat=" (key,value) in options"
+                    ng-selected="key == selectedValue">
+                {{value}}
+            </option>
+        </select>
+    </div>
+</div>

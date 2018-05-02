@@ -1,0 +1,11 @@
+<div>
+    <label class="{{labelClass}}">{{labelTitle}}</label>
+    <div class="{{divClass}}">
+        <input type="text" class="form-control  col-md-5" ng-model="selectedStart" data-date-format="yyyy-MM-dd"
+               data-date-type="number" data-max-date="{{selectedEnd}}"  name="publishAtStart" bs-datepicker autoclose="true" >
+    </div>
+    <div class="col-md-2">
+        <input type="text" class="form-control col-md-5" ng-model="selectedEnd" data-date-format="yyyy-MM-dd"
+               data-date-type="number" data-min-date="{{selectedStart}}" name="publishAtEnd" bs-datepicker autoclose="true" >
+    </div>
+</div>

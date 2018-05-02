@@ -1,0 +1,22 @@
+<div class="row" style="position: relative;margin: 0">
+    <input type="text" maxlength="4" minlength="4" ng-click="showYearTemplate()"  class="form-control col-md-5" ng-model="selectTime">
+    <ul  ng-if="show" style="list-style: none;border: 1px solid #e8e8e8;padding: 5px;min-width: 255px;overflow: hidden;position: absolute;top: 37px;left: -33px;z-index: 150;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #e8e8e8;
+">
+        <li  style="padding: 5px 0;text-align: center;font-weight: 600;">
+            <button  style="border-radius: 3px;cursor:pointer;display: inline-block;border: 1px solid #e8e8e8;padding: 1px 17px;" class="col-md-4  btn btn-default" ng-click="left()"> < </button>
+            <span class="col-md-4" ></span>
+            <button style="border-radius: 3px;cursor:pointer;display: inline-block;border: 1px solid #e8e8e8;padding: 1px 17px;"  class="col-md-4 btn btn-default" ng-click="right()"> > </button></li>
+        <li style="padding: 5px 0" >
+            <div ng-if="data" style="display: inline-block;padding:0;text-align: center;" ng-repeat="d in data track by $index" class="col-md-3">
+                <button  class="btn btn-default" ng-disabled="minValue>=d" ng-click="selectValue(d)"  ng-class="{'timeActive':d == index||d == selectTime}"
+                     style="cursor:pointer;margin: 3px 3px 0 0;border:1px solid #e8e8e8;border-radius: 3px"> {{d}}</button>
+
+            </div>
+        </li>
+
+    </ul>
+</div>
+
