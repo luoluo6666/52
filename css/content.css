@@ -1,0 +1,123 @@
+.f-inputbox {
+  display: inline;
+  margin: 0 10px;
+  width: 200px;
+  vertical-align: middle;
+}
+.f-redline {
+  padding-left: 10px;
+  border-left: 3px solid red;
+}
+.f-marginleft {
+  margin-left: 15px;
+}
+.f-btnpadding {
+  margin-right: 20px;
+  padding: 6px 20px;
+}
+.f-indent {
+  text-indent: 1.2em;
+}
+.f-short {
+  width: calc(80%);
+}
+.f-lineheight {
+  margin: 10px 0;
+}
+.f-min80 {
+  min-width: 80px;
+}
+.unvisible {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.edui-container {
+  margin: 0 !important;
+  width: 100% !important;
+}
+.edui-body-container {
+  min-height: 200px !important;
+}
+.contentrank {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  list-style: none;
+  line-height: 1.42857143;
+}
+.contentrank > li {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.contentrank > li > span {
+  margin-right: 10px;
+  display: inline-block;
+  text-align: center;
+}
+.contentrank > li:nth-child(2n+1) {
+  background: #f9f9f9;
+}
+.rank1 {
+  width: 5%;
+  min-width: 30px;
+}
+.rank2 {
+  width: 9%;
+  min-width: 45px;
+}
+.rank3 {
+  width: 12%;
+  min-width: 70px;
+}
+.rank4 {
+  width: 20%;
+  min-width: 150px;
+}
+@media (max-width: 992px) {
+  .f-short {
+    width: calc(100% - 80px);;
+  }
+  .f-min80 {
+    width: 80px;
+  }
+}
+.middle {
+  vertical-align: middle;
+}
+.serviceUl {
+  margin: 0;
+  padding-left: 20px;
+}
+.chartName {
+  width: 600px;
+  text-align: center;
+}
+.chartName > tr > td {
+  text-align: center;
+}
+.pfi {
+  display: inline-block;
+  height: 0;
+}
+.sensitivity {
+  margin-right: 200px;
+  width: 600px;
+  float: left;
+}
+.sensitivitytable {
+  margin-top: 80px;
+}
+.hardnessTop {
+  border-top: 1px solid #ccc;
+}
+.hardnessFoot {
+  border-bottom: 1px solid #ccc;
+}
+.hardnessLeft {
+  border-right: 1px solid #ccc;
+}
+.sensitivitytable {
+  margin: 40px 0;
+}
